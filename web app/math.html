@@ -6,10 +6,10 @@
         <p id="clock" style="text-align: right;">2024-10-19 01:00:00</p>
     </header>
 
-
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <body>
     <title>
-        Play
+        Meth
     </title>
     <link href="css/myapp.css" rel="stylesheet">
 
@@ -18,15 +18,20 @@
 
     <main>
         <div style="text-align: center ;">
+<h1>Meth magic</h1>
+<p>Using Plotly.js to plot mathematical data</p>
 
-
-            <canvas id="canvas" width="600" height="400" style="border: 5px solid blue;"></canvas>
-            <br>
-            <button id="left" name="left" onclick="moveleft()">left </button>
-            <button id="right" name="right" onclick="moveright()">right </button>
-            <button id="up" name="up" onclick="moveup()">up </button>
-            <button id="down" name="down" onclick="movedown()">down </button>
-        </div>
+<p>
+    X values:
+    <input id="xvalues" style="width:95%" type="text" value="">
+</p>
+<p>
+    y values:
+    <input id="yvalues" style="width:95%" type="text" value="">
+</p>
+<button onclick='plotdata("scatter")'>Scatter</button>
+<button onclick='plotdata("lines")'>Draw lines</button> 
+<div id="myPlot" style="width:100%;max-width:700px"></div> 
         <p style="text-align: center;">
             <a href="Home.html">
                 <button>Return Home</button>
